@@ -55,5 +55,29 @@ def detect_handwritten_ocr(path):
                         print('\tSymbol: {} (confidence: {})'.format(
                             symbol.text, symbol.confidence))
 
+                
+def detect_text(path):
+    """Detects text in the file."""
+    from google.cloud import vision
+    client = vision.ImageAnnotatorClient()
+
+    with io.open(path, 'rb') as image_file:
+        content = image_file.read()
+
+    image = vision.types.Image(content=content)
+
+    response = client.text_detection(image=image)
+    texts = response.text_annotations
+    print('Texts:')
+
+    for text in texts:
+        print('\n"{}"'.format(text.description))
+
+        vertices = (['({},{})'.format(vertex.x, vertex.y)
+                    for vertex in text.bounding_poly.vertices])
+
+        print('bounds: {}'.format(','.join(vertices)))
+        
 def main():
     detect_handwritten_ocr(path)
+    detect_text(path)
