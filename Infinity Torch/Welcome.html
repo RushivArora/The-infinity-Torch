@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Infinity Torch</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+
+  /*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 600px;
+  background-color: #333;
+  /*height: 100%; */
+  /*min-height: 100%;*/
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  position: fixed;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container-fluid{
+  background-image : "image/DogCover.png"
+}
+
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: left;
+  }
+}
+
+footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    @media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    background-color: #555;
+    top: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+
+.myCarousel{
+  margin.top: 15px
+}
+
+
+  </style>
+</head>
+<body>
+
+<div class="masthead clearfix">
+            <div class="container inner">
+              <h1 class="masthead-brand"></h1>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="About.html">About</a></li>
+                  <li class = "dropdown">
+                  <a class = "dropdown-toggle" data-toggle= "dropdown" href="Switches.html">Switches<span class = "caret"></span></a>
+                  <ul class = "dropdown-menu">
+                     <li><a href = "RT.html">Resistance Teller</a></li>
+                     <li><a href = "BTH.html">Binary to Hexadecimal Converter</a></li>
+                     <li><a href = "HTB.html">HexaDecimal to Binary Converter</a></li>
+                 </ul>
+              </nav>
+            </div>
+          </div>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/Contact1.png" alt="Image">
+        <div class="carousel-caption">
+          <div class="inner cover">
+            <h1 class="cover-heading">The Infinity Torch</h1>
+            <h3 class = "slogan">Like the Gauntlet, but Practical</h3>
+            <p class="lead">Add the stuff</p>
+            <p class="lead">
+              <a href="About.html" class="btn btn-lg btn-default">Learn more</a>
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="item">
+        <img src="images/Contact3.png" alt="Image">
+        <div class="carousel-caption">
+          <div class="inner cover">
+            <h1 class="cover-heading">The Infinity Torch</h1>
+            <h3 class = "slogan"> Like the Gauntlet, but Practical</h3>
+            <p class="lead">Add stuff here</p>
+            <p class="lead">
+              <a href="About.html" class="btn btn-lg btn-default">Learn more</a>
+            </p>
+          </div>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="images/Contact5.png" alt="Image">
+        <div class="carousel-caption">
+          <div class="inner cover">
+           <h1 class="cover-heading">The Infinity Torch</h1>
+            <h3 class = "slogan">Like the Gauntlet, but Practical</h3>
+            <p class="lead">Add stuff here</p>
+            <p class="lead">
+              <a href="About.html" class="btn btn-lg btn-default">Learn more</a>
+            </p>
+          </div>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+<footer class="container-fluid text-center">
+  <p>Made with &#x2764 for the Gauntlet</p>
+</footer>
+
+</body>
+</html>
+
