@@ -12,7 +12,7 @@ from google.cloud import translate
 from google.cloud import vision
 
 path  = /home/pi/desktop/image.jpg
-
+"""
 def detect_handwritten_ocr(path):
     """Detects handwritten characters in a local image.
 
@@ -56,7 +56,7 @@ def detect_handwritten_ocr(path):
                         print('\tSymbol: {} (confidence: {})'.format(
                             symbol.text, symbol.confidence))
 
-                        
+   """                     
 
 def detect_text_Bin_to_Hex(path):
     """Detects text in the file."""
