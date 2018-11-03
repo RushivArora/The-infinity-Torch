@@ -80,7 +80,11 @@ def detect_text_Bin_to_Hex(path):
         print('bounds: {}'.format(','.join(vertices)))
     """
     print(hex(int(text,2)))
+    print('Saving result to {} in bucket {}.'hex(int(text,2)),
+                                                     bucket_name))
 
 def main():
     detect_handwritten_ocr(path)
     detect_text(path)
+    
+    """Create a bucket with the following comand before running this code 'gsutil mb gs:'"""
