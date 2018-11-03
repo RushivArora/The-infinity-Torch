@@ -2,12 +2,13 @@ import argparse
 import base64
 import picamera
 import json
-
+"""
 from googleapiclient import discovery
 from oauth2client.client import GoogleCredentials
 from google.cloud import pubsub_v1
 from google.cloud import storage
 from google.cloud import translate
+"""
 from google.cloud import vision
 
 path  = /home/pi/desktop/image.jpg
