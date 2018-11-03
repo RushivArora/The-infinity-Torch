@@ -13,7 +13,7 @@ from google.cloud import vision
 
 path  = "/home/pi/desktop/image.jpg"
 
-def detect_text_Bin_to_Hex(path):
+def detect_text(path):
     """Detects text in the file."""
     from google.cloud import vision
     client = vision.ImageAnnotatorClient()
@@ -43,7 +43,6 @@ def detect_text_Bin_to_Hex(path):
                                                      """
 
 def main():
-    detect_handwritten_ocr(path)
     detect_text(path)
     
     """Create a bucket with the following comand before running this code 'gsutil mb gs:'"""
